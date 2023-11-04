@@ -24,7 +24,7 @@ const Room = () => {
 
         }
         if(response.events.includes("databases.*.collections.*.documents.*.delete")){
-            console.log("A Document has been Delete");
+            // console.log("A Document has been Delete");
             setMessages(prevState=>messages.filter((message)=>message.$id !== response.payload.$id));
 
         }
