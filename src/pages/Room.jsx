@@ -34,7 +34,7 @@ const Room = () => {
 return ()=>{
     unsubscribe();
 }
-},[])
+},[messages])
 
     const handleSubmit = async (e)=>{
         e.preventDefault();
