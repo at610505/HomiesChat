@@ -11,7 +11,7 @@ function App() {
 
   return (
   
-      <Router basename={import.meta.env.DEV ? '/' : '/react-vite-gh-pages/'}>
+      <Router basename={import.meta.env.DEV ? '/' : '/HomiesChat/'}>
         <AuthProvider>
         <Routes>
           <Route element={<PrivateRoutes/>}>
