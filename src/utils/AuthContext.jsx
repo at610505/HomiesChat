@@ -40,7 +40,7 @@ export const AuthProvider = ({children})=>{
             const accountInfo = await account.get();
             setUser(accountInfo);
 
-            navigate('/');
+            navigate('/HomiesChat');
 
         } catch (error) {
             console.error(error);
@@ -63,7 +63,7 @@ export const AuthProvider = ({children})=>{
             const accountInfo = await account.get();
             setUser(accountInfo);
 
-            navigate('/');
+            navigate('/HomiesChat');
 
         } catch (error) {
             console.error(error);
