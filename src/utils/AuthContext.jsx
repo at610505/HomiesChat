@@ -40,7 +40,7 @@ export const AuthProvider = ({children})=>{
             const accountInfo = await account.get();
             setUser(accountInfo);
 
-            navigate('/HomiesChat');
+            navigate('/');
 
         } catch (error) {
             console.error(error);
@@ -63,7 +63,7 @@ export const AuthProvider = ({children})=>{
             const accountInfo = await account.get();
             setUser(accountInfo);
 
-            navigate('/HomiesChat');
+            navigate('/');
 
         } catch (error) {
             console.error(error);
@@ -77,7 +77,7 @@ export const AuthProvider = ({children})=>{
             await account.deleteSession('current');
             setUser(null);
             setLoading(false);
-            // navigate('/login');
+            navigate('/login');
 
         } catch (error) {
             console.error(error);
